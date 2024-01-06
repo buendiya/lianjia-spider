@@ -22,6 +22,7 @@ class Spider:
         data = []
         while True:
             url = self.ershoufang_url + '/pg' + str(page) + self.type + self.price + 'rs' + self.locale + '/'
+            print('url: ', url)
             soup = BeautifulSoup(self.__requestsGet(url), 'lxml')
 
             if total_page == 1 and soup.find('div', {'class': 'page-box fr'}):

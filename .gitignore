@@ -1,1 +1,4 @@
 db/
+.idea/
+config/config.json
+db/lianjia.db
